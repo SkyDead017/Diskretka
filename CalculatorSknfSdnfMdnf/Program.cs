@@ -35,11 +35,6 @@ namespace Laba_2_DIS
             List<string> diz = new List<string>(set);
             List<string> sklei = p.GetSkei(diz);
             sklei = sklei.Distinct().ToList();
-            foreach (var number in sklei)
-            {
-                Console.Write(number);
-                Console.WriteLine(" ");
-            }
             string skleiForImpMat = p.NormalPrint(sklei);
             Console.WriteLine("Импликанты:");
             Console.WriteLine(skleiForImpMat);
